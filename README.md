@@ -186,3 +186,14 @@ Setelah menginputkan nama dan mengubah datanya maka data akan terubah.
 
 ## Untuk menghapus data, ketik perintah ```H```
 
+Masukkan namanya untuk menghapus data
+
+![prak7-5](https://user-images.githubusercontent.com/115516473/205432039-61f36544-ad7d-4276-b0f7-db10d86ed6bb.png)
+
+## Dan yang terakhir, gunakan perintah ```K``` untuk keluar dari program 
+
+![prak7-6](https://user-images.githubusercontent.com/115516473/205432161-6c7ff00e-0c26-4cc6-a9d5-f1e4bfb74434.png)
+
+## Flowchartnya sebagai berikut 
+
+![Flowchart prak7](https://user-images.githubusercontent.com/115516473/205432257-11c5fb58-6821-4ab3-9b54-aa3ed6c43bd1.png)
