@@ -30,3 +30,15 @@ d = lambda s: "".join(set(s))
 print(d("Tertimpa"))
 ```
 
+## Outputnya :
+
+![output latihan1 prak6](https://user-images.githubusercontent.com/115516473/205430623-1aedcacb-7825-4e82-a17c-bdcf0dcadb36.png)
+
+hasil dari "".join(set(s))" akan menghasilkan huruf acak
+
+## Tugas Praktikum 7
+
+![soaltugaspraktikum7](https://user-images.githubusercontent.com/115516473/205430699-3c72f86c-26df-4e79-93a8-8d5f637e5aab.png)
+
+### Buat dictionary nama mahasiswa
+
