@@ -168,4 +168,21 @@ while True:
 
 ![outputpraktikum7](https://user-images.githubusercontent.com/115516473/205431110-8a96732c-bc55-4675-aac0-ceee1053097f.png)
 
-###
+## Untuk memunculkan datanya, gunakan perintah ```L```
+
+![prak7-1](https://user-images.githubusercontent.com/115516473/205431271-e6b48d36-bd97-4a26-8e63-a9e869dd7445.png)
+
+## Untuk menambahkan data, gunakan perintah ```T```
+
+![prak7-2](https://user-images.githubusercontent.com/115516473/205431401-3f913354-225d-4858-98cb-0a9ae3d9aa9f.png)
+
+![prak7-3](https://user-images.githubusercontent.com/115516473/205431433-16a7dad8-7e1e-461b-a5d9-e2ce79780a00.png)
+
+## Untuk mengubah data, ketik perintah ```U```
+
+![prak7-4](https://user-images.githubusercontent.com/115516473/205431533-12e23603-b33e-4f7f-9af5-4ccfe07a61fe.png)
+
+Setelah menginputkan nama dan mengubah datanya maka data akan terubah.
+
+## Untuk menghapus data, ketik perintah ```H```
+
