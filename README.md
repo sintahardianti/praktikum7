@@ -1,4 +1,4 @@
-# praktikum_6
+# Praktikum 7
 
 ### Nama : Sinta Hardianti Wijaya
 
@@ -34,11 +34,138 @@ print(d("Tertimpa"))
 
 ![output latihan1 prak6](https://user-images.githubusercontent.com/115516473/205430623-1aedcacb-7825-4e82-a17c-bdcf0dcadb36.png)
 
-hasil dari "".join(set(s))" akan menghasilkan huruf acak
+hasil dari ```"".join(set(s))"``` akan menghasilkan huruf acak
 
 ## Tugas Praktikum 7
 
 ![soaltugaspraktikum7](https://user-images.githubusercontent.com/115516473/205430699-3c72f86c-26df-4e79-93a8-8d5f637e5aab.png)
 
-### Buat dictionary nama mahasiswa
+### - Buat dictionary nama mahasiswa
 
+``` mahasiswa = {} ```
+
+### - Buat kode untuk menu tambah data dan ubah data
+
+```
+from menu.mahasiswa import mahasiswa
+
+def add():
+    print("Tambah Data")
+    nama = input("Nama\t : ")
+    nim = input("NIM\t : ")
+    uts = int(input("Nilai UTS\t : "))
+    uas = int(input("Nilai UAS\t : "))
+    tugas = int(input("Nilai Tugas\t : "))
+    akhir = (tugas * 30/100) + (uts * 35/100) + (uas * 35/100)
+    mahasiswa[nama] = nim, tugas, uts, uas, akhir
+
+def update():
+    print("Ubah Data")
+    nama = input("Masukkan Nama : ")
+    if nama in mahasiswa.keys():
+        nim = input("NIM\t : ")
+        uts = int(input("Nilai UTS\t : "))
+        uas = int(input("Nilai UAS\t : "))
+        tugas = int(input("Nilai Tugas\t : "))
+        akhir = (tugas * 30/100) + (uts * 35/100) + (uas * 35/100)
+        mahasiswa[nama] = nim, tugas, uts, uas, akhir
+
+    else:
+        print("Nama tidak ditemukan ")
+ ```
+ 
+ ### - Buat kode untuk lihat data
+ 
+ ```
+ from menu.mahasiswa import mahasiswa
+
+def show():
+    if mahasiswa.items():
+        print("Daftar Nilai")
+        print("=================================================================================")
+        print("| No |      Nama      |     NIM     |  Tugas  |   UTS   |   UAS   |    Akhir    |")
+        print("=================================================================================")
+        i = 0
+        for a in mahasiswa.items():
+            i += 1
+            print("| {no:2d} | {0:14s} | {1:11s} | {2:7d} | {3:7d} | {4:7d} |      {5:6.2f} |"
+            .format (a[0][: 14],a[1][0],a[1][1],a[1][2],a[1][3],a[1][4], no = i))
+        print("=================================================================================")
+        
+    else:
+        print("Daftar Nilai")
+        print("=================================================================================")
+        print("| No |      Nama      |     NIM     |  Tugas  |   UTS   |   UAS   |    Akhir    |")
+        print("=================================================================================")
+        print("|                                TIDAK ADA DATA                                 |")
+        print("=================================================================================")
+ ```
+ 
+ ### - Buat kode untuk hapus data
+ 
+ ```
+ from menu.mahasiswa import mahasiswa
+
+def delete():
+    print("Hapus Data")
+    nama = input("Masukkan Nama : ")
+    
+    if nama in mahasiswa.keys():
+        del mahasiswa[nama]
+    
+    else:
+        print("Nama tidak ditemukan")
+```
+
+### - Buat kode untuk main nya agar berjalan
+
+```
+from menu.add import add,update
+from menu.view import show
+from menu.delete import delete
+
+while True:
+
+    print("\n")
+    print("================================")
+    print("      Program input nilai       ")
+    print("================================\n")
+
+    print("[1] Lihat Data")
+    print("[2] Tambah Data")
+    print("[3] Ubah Data")
+    print("[4] Hapus Data")
+    print("[5] Keluar")
+
+    x = input("> PILIH MENU : ")
+
+    print("\n")
+
+    if x == '1':
+        show()
+    elif x == '2':
+        add()
+    elif x == '3':
+        update()
+    elif x == '4':
+        delete()
+
+    elif x == '5':
+        print("==========================================================================")
+        print('\n')
+        print("> You exit the code                        ")
+        print("> Thanks for using it :DDD ")
+        print("\n")
+        print("==========================================================================")
+
+        exit()
+
+    else:
+        print("            KODE YANG ANDA MASUKKAN TIDAK VALID !!!!!!!!!!!")
+```
+
+### - Outputnya :
+
+![outputpraktikum7](https://user-images.githubusercontent.com/115516473/205431110-8a96732c-bc55-4675-aac0-ceee1053097f.png)
+
+###
